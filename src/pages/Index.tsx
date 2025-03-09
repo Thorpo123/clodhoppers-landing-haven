@@ -8,7 +8,7 @@ import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
 
 const Index = () => {
-  // Smooth scrolling functionality
+  // Smooth scrolling functionality adapted for hash router
   useEffect(() => {
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;

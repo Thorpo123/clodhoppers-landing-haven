@@ -1,5 +1,5 @@
 
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 
@@ -21,13 +21,13 @@ const NotFound = () => {
         <p className="text-muted-foreground mb-8">
           The page you're looking for doesn't exist or has been moved.
         </p>
-        <a 
-          href="/" 
+        <Link 
+          to="/" 
           className="btn-primary inline-flex items-center gap-2"
         >
           <ArrowLeft size={16} />
           Return to Home
-        </a>
+        </Link>
       </div>
     </div>
   );
